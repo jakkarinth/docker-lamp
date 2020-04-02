@@ -3,7 +3,7 @@ services:
     www:
         build: .
         ports: 
-            - "8001:80"
+            - "80:80"
         volumes:
             - ./www:/var/www/html/
         links:
@@ -19,7 +19,7 @@ services:
             MYSQL_DATABASE: myDb
             MYSQL_USER: user
             MYSQL_PASSWORD: test
-            MYSQL_ROOT_PASSWORD: test 
+            MYSQL_ROOT_PASSWORD: toor
         volumes:
             - ./dump:/docker-entrypoint-initdb.d
             - ./conf:/etc/mysql/conf.d
@@ -35,6 +35,6 @@ services:
         environment:
             MYSQL_USER: user
             MYSQL_PASSWORD: test
-            MYSQL_ROOT_PASSWORD: test 
+            MYSQL_ROOT_PASSWORD: toor
 volumes:
     persistent:
