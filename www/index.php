@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-    <?php echo "<h1>Hi! I'm happy</h1>"; ?>
+    <?php echo "<h1>Docker Working.... Mission Completed !!!</h1>"; ?>
 
     <?php
 
@@ -21,7 +21,7 @@
 
     $query = 'SELECT * From Person';
     $result = mysqli_query($conn, $query);
-
+    echo 'Test Database';
     echo '<table class="table table-striped">';
     echo '<thead><tr><th></th><th>id</th><th>name</th></tr></thead>';
     while($value = $result->fetch_array(MYSQLI_ASSOC)){
