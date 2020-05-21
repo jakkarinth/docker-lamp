@@ -38,5 +38,6 @@ services:
             MYSQL_ROOT_PASSWORD: toor
         volumes:
             - ./conf/uploads.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
+
 volumes:
     persistent:
